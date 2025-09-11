@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-<title>ChimneyPro | Who We Are</title>
+<title>ChimneyPro | Contact Us</title>
 </head>
 <body class="bg-gray-50 text-gray-800"><nav class="bg-gray-900 text-white">
   <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
@@ -17,11 +17,14 @@
     </ul>
   </div>
 </nav>
-<main class="max-w-6xl mx-auto p-8">
-    <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
-    <p class="mb-4">We are a family-owned chimney service with 20+ years experience. 
-      Our mission is to keep your home safe, efficient, and warm all winter long.</p>
-    <img src="assets/team.jpg" alt="Team photo" class="rounded-lg shadow-md">
+<main class="bg-gray-100 max-w-6xl mx-auto p-8 rounded-lg shadow-md mt-8">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 border rounded" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 border rounded" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-2 border rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+    </form>
   </main>
 <footer class="bg-gray-900 text-white text-center p-4 mt-8">
   <p>© 2025 ChimneyPro. All rights reserved.</p>
