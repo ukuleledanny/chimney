@@ -7,13 +7,26 @@
 <title>ChimneyPro | Who We Are</title>
 </head>
 <body class="bg-gray-50 text-gray-800"><nav class="bg-gray-900 text-white">
-  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-    <h1 class="text-xl font-bold"><a href="index.html">ChimneyPro</a></h1>
-    <ul class="flex space-x-6">
-      <li><a href="index.html" class="hover:text-blue-400">Who We Are</a></li>
-      <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
-      <li><a href="locations.html" class="hover:text-blue-400">Locations</a></li>
-      <li><a href="contact.html" class="hover:text-blue-400">Contact Us</a></li>
+  <div class="max-w-6xl mx-auto p-4">
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold"><a href="./">ChimneyPro</a></h1>
+      <button id="menu-toggle" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6" id="menu">
+        <li><a href="./" class="hover:text-blue-400">Who We Are</a></li>
+        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+        <li><a href="locations.html" class="hover:text-blue-400">Locations</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400">Contact Us</a></li>
+      </ul>
+    </div>
+    <ul class="mt-3 space-y-2 md:hidden hidden" id="mobile-menu">
+      <li><a href="./" class="block px-2 py-1 hover:text-blue-400">Who We Are</a></li>
+      <li><a href="services.html" class="block px-2 py-1 hover:text-blue-400">Services</a></li>
+      <li><a href="locations.html" class="block px-2 py-1 hover:text-blue-400">Locations</a></li>
+      <li><a href="contact.html" class="block px-2 py-1 hover:text-blue-400">Contact Us</a></li>
     </ul>
   </div>
 </nav>
@@ -22,8 +35,30 @@
     <p class="mb-4">We are a family-owned chimney service with 20+ years experience. 
       Our mission is to keep your home safe, efficient, and warm all winter long.</p>
     <img src="assets/team.jpg" alt="Team photo" class="rounded-lg shadow-md">
+    <section class="mt-10">
+      <h3 class="text-2xl font-semibold mb-3">Reviews</h3>
+      <blockquote class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+        <p class="italic">“Chris has been doing my house, along with my two boys in Jasper, and several of our friends for 10 years… we always call him to come, he’s always reliable, clean, honest, does a good job at a pretty reasonable price.”</p>
+        <footer class="mt-2 text-sm text-gray-600">- J. A.</footer>
+      </blockquote>
+    </section>
   </main>
 <footer class="bg-gray-900 text-white text-center p-4 mt-8">
-  <p>© 2025 ChimneyPro. All rights reserved.</p>
-</footer></body>
+  <p></p>
+</footer>
+<script>
+  (function() {
+    var toggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', function() {
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  })();
+</script></body>
 </html>
