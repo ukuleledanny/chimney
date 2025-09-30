@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-<title>ChimneyPro | Contact Us</title>
-</head>
-<body class="bg-gray-50 text-gray-800"><nav class="bg-gray-900 text-white">
-  <div class="max-w-6xl mx-auto p-4">
-    <div class="flex justify-between items-center">
-      <h1 class="text-xl font-bold"><a href="./">ChimneyPro</a></h1>
-      <button id="menu-toggle" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <ul class="hidden md:flex space-x-6" id="menu">
-        <li><a href="./" class="hover:text-blue-400">Who We Are</a></li>
-        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
-        <li><a href="locations.html" class="hover:text-blue-400">Locations</a></li>
-        <li><a href="contact.html" class="hover:text-blue-400">Contact Us</a></li>
-      </ul>
-    </div>
-    <ul class="mt-3 space-y-2 md:hidden hidden" id="mobile-menu">
-      <li><a href="./" class="block px-2 py-1 hover:text-blue-400">Who We Are</a></li>
-      <li><a href="services.html" class="block px-2 py-1 hover:text-blue-400">Services</a></li>
-      <li><a href="locations.html" class="block px-2 py-1 hover:text-blue-400">Locations</a></li>
-      <li><a href="contact.html" class="block px-2 py-1 hover:text-blue-400">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
-<main class="bg-gray-100 max-w-6xl mx-auto p-8 rounded-lg shadow-md mt-8">
-    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-    <div class="space-y-3">
-      <p>
-        Call or text: <a class="text-blue-600 hover:underline" href="tel:+12568001862">(256) 800-1862</a>
-      </p>
-      <p>
-        Email: <a class="text-blue-600 hover:underline" href="mailto:info@chimneypro.example">info@chimneypro.example</a>
-      </p>
-      <p>
-        Facebook: <a class="text-blue-600 hover:underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook Page</a>
-      </p>
-      <p>
-        Google Maps: <a class="text-blue-600 hover:underline" href="https://maps.google.com/?q=ChimneyPro" target="_blank" rel="noopener">Find us on Maps</a>
-      </p>
-      <p class="text-sm text-gray-600">For fastest response, please call or text.</p>
-    </div>
-  </main>
-<footer class="bg-gray-900 text-white text-center p-4 mt-8">
-  <p></p>
-</footer>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Chiminey Cricket — trusted chimney sweep services across North Alabama since 1995." />
+<meta name="theme-color" content="#772432" />
+<title>Chiminey Cricket</title>
+<!-- Open Graph / SEO -->
+<meta property="og:title" content="Chiminey Cricket" />
+<meta property="og:description" content="Trusted chimney sweep services across North Alabama since 1995." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/og-hero-placeholder.jpg" />
+<meta property="og:url" content="https://example.com/" />
+<link rel="icon" href="assets/images/favicon-placeholder.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+<!-- Optional: Google Analytics (paste your GA4 'gtag' here if desired)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
 <script>
-  (function() {
-    var toggle = document.getElementById('menu-toggle');
-    var mobileMenu = document.getElementById('mobile-menu');
-    if (toggle && mobileMenu) {
-      toggle.addEventListener('click', function() {
-        if (mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.remove('hidden');
-        } else {
-          mobileMenu.classList.add('hidden');
-        }
-      });
-    }
-  })();
-</script></body>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+-->
+<!-- Basic security headers for static sites via meta (best effort) -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <title>Contact — Chiminey Cricket</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Chiminey Cricket home">
+      <img src="assets/images/logo-placeholder.png" width="44" height="44" alt="Chiminey Cricket logo placeholder" />
+      <span class="brand-text">Chiminey Cricket</span>
+    </a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Menu</span>
+        ☰
+      </button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a class="btn btn-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="lead">Questions, quotes, or scheduling — we’re here to help.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-form-title">
+        <div class="container split">
+          <div class="contact-image">
+            <img src="assets/images/north-alabama-map-placeholder.jpg" alt="Placeholder: Map of North Alabama" />
+          </div>
+          <div>
+            <h2 id="contact-form-title">Send a Message</h2>
+            <form id="contact-form" class="contact-form" aria-describedby="contact-notice">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+              <p id="contact-notice" class="micro">This form opens your email client to send to <strong>chimineycricketco@gmail.com</strong>. No data is stored on this site.</p>
+              <button class="btn btn-cta" type="submit">Email Us</button>
+            </form>
+
+            <div class="contact-info">
+              <h3>Other Ways</h3>
+              <ul>
+                <li>Email: <a href="mailto:chimineycricketco@gmail.com">chimineycricketco@gmail.com</a></li>
+                <li>Phone: <a href="tel:+12565550123">(256) 555-0123</a> <!-- replace with your real number --></li>
+                <li>Service Area: North Alabama</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Chiminey Cricket</strong><br/>
+      Family-owned since 1995<br/>
+      North Alabama
+    </div>
+    <div>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-cta">
+      <a class="btn btn-cta" href="contact.html">Get a Quote</a>
+      <div class="socials" aria-label="Social media">
+        <a href="#" aria-label="Facebook" rel="noopener">Fb</a>
+        <a href="#" aria-label="Instagram" rel="noopener">Ig</a>
+        <a href="#" aria-label="X/Twitter" rel="noopener">X</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-small">
+    <small>&copy; <span id="year"></span> Chiminey Cricket. All rights reserved.</small>
+  </div>
+</footer>
+
+  </body>
 </html>

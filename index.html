@@ -1,64 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-<title>ChimneyPro | Who We Are</title>
-</head>
-<body class="bg-gray-50 text-gray-800"><nav class="bg-gray-900 text-white">
-  <div class="max-w-6xl mx-auto p-4">
-    <div class="flex justify-between items-center">
-      <h1 class="text-xl font-bold"><a href="./">ChimneyPro</a></h1>
-      <button id="menu-toggle" class="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <ul class="hidden md:flex space-x-6" id="menu">
-        <li><a href="./" class="hover:text-blue-400">Who We Are</a></li>
-        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
-        <li><a href="locations.html" class="hover:text-blue-400">Locations</a></li>
-        <li><a href="contact.html" class="hover:text-blue-400">Contact Us</a></li>
-      </ul>
-    </div>
-    <ul class="mt-3 space-y-2 md:hidden hidden" id="mobile-menu">
-      <li><a href="./" class="block px-2 py-1 hover:text-blue-400">Who We Are</a></li>
-      <li><a href="services.html" class="block px-2 py-1 hover:text-blue-400">Services</a></li>
-      <li><a href="locations.html" class="block px-2 py-1 hover:text-blue-400">Locations</a></li>
-      <li><a href="contact.html" class="block px-2 py-1 hover:text-blue-400">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
-<main class="max-w-6xl mx-auto p-8">
-    <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
-    <p class="mb-4">We are a family-owned chimney service with 20+ years experience. 
-      Our mission is to keep your home safe, efficient, and warm all winter long.</p>
-    <img src="assets/team.jpg" alt="Team photo" class="rounded-lg shadow-md">
-    <section class="mt-10">
-      <h3 class="text-2xl font-semibold mb-3">Reviews</h3>
-      <blockquote class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
-        <p class="italic">“Chris has been doing my house, along with my two boys in Jasper, and several of our friends for 10 years… we always call him to come, he’s always reliable, clean, honest, does a good job at a pretty reasonable price.”</p>
-        <footer class="mt-2 text-sm text-gray-600">- J. A.</footer>
-      </blockquote>
-    </section>
-  </main>
-<footer class="bg-gray-900 text-white text-center p-4 mt-8">
-  <p></p>
-</footer>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Chiminey Cricket — trusted chimney sweep services across North Alabama since 1995." />
+<meta name="theme-color" content="#772432" />
+<title>Chiminey Cricket</title>
+<!-- Open Graph / SEO -->
+<meta property="og:title" content="Chiminey Cricket" />
+<meta property="og:description" content="Trusted chimney sweep services across North Alabama since 1995." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/og-hero-placeholder.jpg" />
+<meta property="og:url" content="https://example.com/" />
+<link rel="icon" href="assets/images/favicon-placeholder.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+<!-- Optional: Google Analytics (paste your GA4 'gtag' here if desired)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
 <script>
-  (function() {
-    var toggle = document.getElementById('menu-toggle');
-    var mobileMenu = document.getElementById('mobile-menu');
-    if (toggle && mobileMenu) {
-      toggle.addEventListener('click', function() {
-        if (mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.remove('hidden');
-        } else {
-          mobileMenu.classList.add('hidden');
-        }
-      });
-    }
-  })();
-</script></body>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+-->
+<!-- Basic security headers for static sites via meta (best effort) -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Chiminey Cricket home">
+      <img src="assets/images/logo-placeholder.png" width="200" height="200" alt="Chiminey Cricket logo placeholder" />
+      <span class="brand-text">Family Owned and Operated for 30 years</span>
+    </a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Menu</span>
+        ☰
+      </button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a class="btn btn-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" role="region" aria-label="Hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1><!-- Headline Placeholder -->Your Home. Your Hearth. Our Care.</h1>
+            <p class="lead"><!-- Sub-headline Placeholder -->Trusted chimney sweep services across North Alabama since 1995.</p>
+            <a class="btn btn-cta" href="contact.html">Book an Inspection</a>
+            <p class="micro">* Replace this text and CTA with your own copy later.</p>
+          </div>
+          <div class="hero-media">
+            <img src="assets/images/hero-family-fireplace-placeholder.jpg" alt="Placeholder: Family by a fireplace" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Services -->
+      <section class="section" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title">Services at a Glance</h2>
+          <ul class="card-grid">
+            <li class="card">
+              <img src="assets/images/service-sweep-placeholder.jpg" alt="Placeholder: Chimney sweep service" />
+              <h3>Chimney Sweeping</h3>
+              <p>Clear creosote, improve airflow, and reduce fire risk.</p>
+              <a class="btn btn-secondary" href="services.html#sweeping">Learn more</a>
+            </li>
+            <li class="card">
+              <img src="assets/images/service-inspection-placeholder.jpg" alt="Placeholder: Chimney inspection" />
+              <h3>Inspections</h3>
+              <p>Level-1 & Level-2 inspections for safety and resale needs.</p>
+              <a class="btn btn-secondary" href="services.html#inspections">Learn more</a>
+            </li>
+            <li class="card">
+              <img src="assets/images/service-repair-placeholder.jpg" alt="Placeholder: Chimney repair" />
+              <h3>Repairs & Caps</h3>
+              <p>Minor masonry fixes, cap installs, and draft solutions.</p>
+              <a class="btn btn-secondary" href="services.html#repairs">Learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section bg-muted" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 id="testimonials-title">What Neighbors Say</h2>
+          <div class="testimonial-grid">
+            <blockquote class="testimonial">
+              <p>“Professional, on-time, and left everything spotless.”</p>
+              <footer>— Placeholder Name, Huntsville</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>“We’ve trusted Chiminey Cricket since the 90s. Five stars.”</p>
+              <footer>— Placeholder Name, Madison</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>“Clear pricing and great communication throughout.”</p>
+              <footer>— Placeholder Name, Decatur</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Snapshot -->
+      <section class="section" aria-labelledby="about-snapshot-title">
+        <div class="container split">
+          <div>
+            <h2 id="about-snapshot-title">Family-Owned Since 1995</h2>
+            <p>Chiminey Cricket is a small, family-run chimney sweep serving homes across North Alabama. Chris Smith is your primary serviceman, with his wife Kim running operations.</p>
+            <a class="btn" href="about.html">Our story</a>
+          </div>
+          <div>
+            <img src="assets/images/about-family-placeholder.jpg" alt="Placeholder: Chris and Kim Smith portrait" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Chiminey Cricket</strong><br/>
+      Family-owned since 1995<br/>
+      North Alabama
+    </div>
+    <div>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-cta">
+      <a class="btn btn-cta" href="contact.html">Get a Quote</a>
+      <div class="socials" aria-label="Social media">
+        <a href="#" aria-label="Facebook" rel="noopener">Fb</a>
+        <a href="#" aria-label="Instagram" rel="noopener">Ig</a>
+        <a href="#" aria-label="X/Twitter" rel="noopener">X</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-small">
+    <small>&copy; <span id="year"></span> Chiminey Cricket. All rights reserved.</small>
+  </div>
+</footer>
+
+  </body>
 </html>
