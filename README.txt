@@ -16,7 +16,7 @@ How to use
    - contact.html
 
 3) Contact form:
-   This site has no backend. The form opens your default email client to send to chimineycricketco@gmail.com.
+   This site has no backend.
    If you later want submissions without opening an email client, consider a free static form service
    like Netlify Forms or Formspree (free tiers exist). Do not add paid APIs unless you want them.
 
