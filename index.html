@@ -2,55 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Chiminey Cricket — trusted chimney sweep services across North Alabama since 1995." />
-<meta name="theme-color" content="#772432" />
-<title>Chiminey Cricket</title>
-<!-- Open Graph / SEO -->
-<meta property="og:title" content="Chiminey Cricket" />
-<meta property="og:description" content="Trusted chimney sweep services across North Alabama since 1995." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/images/og-hero-placeholder.jpg" />
-<meta property="og:url" content="https://example.com/" />
-<link rel="icon" href="assets/images/favicon-placeholder.png" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<script defer src="assets/js/main.js"></script>
-<!-- Optional: Google Analytics (paste your GA4 'gtag' here if desired)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX');
-</script>
--->
-<!-- Basic security headers for static sites via meta (best effort) -->
-<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chiminey Cricket — trusted chimney sweep services across North Alabama since 1995." />
+    <meta name="theme-color" content="#772432" />
+    <title>Chiminey Cricket</title>
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Chiminey Cricket" />
+    <meta property="og:description" content="Trusted chimney sweep services across North Alabama since 1995." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-hero-placeholder.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <link rel="icon" href="assets/images/favicon-placeholder.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/main.js"></script>
 
+    <!-- overrides just for this page -->
+    <style>
+      /* Testimonials: 2 columns on desktop, nice spacing and aligned footers */
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+      }
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;      /* a little more breathing room */
+      }
+      .testimonial footer {
+        margin-top: auto;      /* push author to the bottom */
+        font-weight: 600;
+        text-align: right;
+      }
+      @media (max-width: 900px) {
+        .testimonial-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+
+    <!-- Optional: Google Analytics (paste your GA4 'gtag' here if desired)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+    -->
+    <!-- Basic security headers for static sites via meta (best effort) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header" role="banner">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Chiminey Cricket home">
-      <img src="assets/logo.jpg" width="200" height="200" alt="Chiminey Cricket logo" />
-      <span class="brand-text">Family Owned and Operated for 30 years</span>
-    </a>
-    <nav aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">Menu</span>
-        ☰
-      </button>
-      <ul id="primary-menu" class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="btn btn-cta" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Chiminey Cricket home">
+          <img src="assets/logo.jpg" width="200" height="200" alt="Chiminey Cricket logo" />
+          <span class="brand-text">Family Owned and Operated for 30 years</span>
+        </a>
+        <nav aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Menu</span>
+            ☰
+          </button>
+          <ul id="primary-menu" class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="btn btn-cta" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main id="main">
       <!-- Hero -->
@@ -60,7 +84,6 @@
             <h1><!-- Headline Placeholder -->Your Home. Your Chimney. Our Care.</h1>
             <p class="lead"><!-- Sub-headline Placeholder -->Trusted chimney sweep services across North Alabama since 1995.</p>
             <a class="btn btn-cta" href="contact.html">Book an Inspection</a>
-            <p class="micro">* Replace this text and CTA with your own copy later.</p>
           </div>
           <div class="hero-media">
             <img src="assets/images/hero-family-fireplace-placeholder.jpg" alt="Placeholder: Family by a fireplace" />
@@ -75,21 +98,16 @@
           <ul class="card-grid">
             <li class="card">
               <img src="assets/images/service-sweep-placeholder.jpg" alt="Placeholder: Chimney sweep service" />
-              <h3>Chimney Sweeping</h3>
-              <p>Clear creosote, improve airflow, and reduce fire risk.</p>
-              <a class="btn btn-secondary" href="services.html#sweeping">Learn more</a>
+              <h3>Inspections</h3>
             </li>
             <li class="card">
               <img src="assets/images/service-inspection-placeholder.jpg" alt="Placeholder: Chimney inspection" />
-              <h3>Inspections</h3>
-              <p>Level-1 & Level-2 inspections for safety and resale needs.</p>
-              <a class="btn btn-secondary" href="services.html#inspections">Learn more</a>
+              <h3>Chimney Cleaning</h3>
             </li>
             <li class="card">
               <img src="assets/images/service-repair-placeholder.jpg" alt="Placeholder: Chimney repair" />
               <h3>Repairs & Caps</h3>
-              <p>Minor masonry fixes, cap installs, and draft solutions.</p>
-              <a class="btn btn-secondary" href="services.html#repairs">Learn more</a>
+              <p>Chimney cap, crown repair, waterproofing, dampers, firebox repair.</p>
             </li>
           </ul>
         </div>
@@ -126,26 +144,5 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>Chiminey Cricket</strong><br/>
-      Family-owned since 1995<br/>
-      North Alabama
-    </div>
-    <div>
-      <nav aria-label="Footer">
-        <ul class="footer-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-  </div>
-</footer>
-
   </body>
 </html>
