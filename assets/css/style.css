@@ -73,6 +73,12 @@ a.btn { text-decoration: none; }
   color: var(--btn-text);
   border-color: var(--brand);
 }
+@media (prefers-color-scheme: light) {
+  .btn-cta {
+    color: #ffffff; /* white text for contrast */
+  }
+}
+
 .btn-secondary {
   background: var(--bg);
   border-color: #d1d5db;
