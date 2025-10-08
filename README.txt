@@ -1,4 +1,4 @@
-Chiminey Cricket — Static Website
+Chiminy Cricket — Static Website
 =================================
 
 How to use
