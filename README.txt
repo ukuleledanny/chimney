@@ -1,5 +1,5 @@
-Chiminy Cricket — Static Website
-=================================
+Alabama Chimney Sweeps — Static Website
+=======================================
 
 How to use
 ----------
